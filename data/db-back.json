@@ -6,6 +6,21 @@
       "email": "angela.c@gmail.com"
     }
   ],
+
+  "categories": [
+    {"id": 1, "name": "home"},
+    {"id": 2, "name": "shopping"},
+    {"id": 3, "name": "work"},
+    {"id": 4, "name": "free time / leisure"},
+    {"id": 5, "name": "others"}
+  ],
+
+  "importance": [
+    {"id": 1, "name": "low"},
+    {"id": 2, "name": "medium"},
+    {"id": 3, "name": "high"}
+  ],
+  
   "tasks": [
     {
       "id": "1",

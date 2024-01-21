@@ -1,0 +1,48 @@
+<mat-sidenav-container fullscreen>
+
+  <!-- #sidenav -> referencia local que apunta al componente como tal, este componente tiene un toggle-->
+  <mat-sidenav #sidenav  mode="push">
+
+    <mat-toolbar class="primary-bg">
+      <span class="font-light-color">Menú</span>
+      <span class="spacer"></span>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon class="icon-light">close</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <mat-list-item 
+        *ngFor="let item of siderbarItems"
+        [routerLink]="item.url"
+        (click)= "sidenav.toggle()">
+        <mat-icon matListItemIcon> {{ item.icon }} </mat-icon>
+        {{ item.label }}
+
+      </mat-list-item>
+    </mat-nav-list>
+
+  </mat-sidenav >
+
+  <!-- Opción de menú que permite llamar al sidebar -->
+  <mat-toolbar class="primary-bg">
+
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon class="icon-light">menu</mat-icon>
+    </button>
+
+    <span class="spacer"></span>
+
+    <button mat-button class="font-light-color">
+      Logout
+    </button>
+
+  </mat-toolbar>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-sidenav-container>
+
+

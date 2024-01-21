@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-bg-color: #70A8B2;
+  --primary-light-bg-color: #b5dbe1;
+  --secondary-bg-color: #E2FADB;
+  --accent-color: #c37d92;
+  --accent-light-color: #d89a9e;
+  --font-color: #545454;
+}
+
+
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  color: var(--font-color);
+}
+
+/* Shared */
+
+.primary-bg{
+  background-color: var(--primary-bg-color) !important;
+}
+
+.icon-light{
+  color: white !important;
+}
+
+.font-light-color{
+  color: white !important;
+}
+
+
+/* Navbar */
+mat-sidenav {
+  width: 200px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

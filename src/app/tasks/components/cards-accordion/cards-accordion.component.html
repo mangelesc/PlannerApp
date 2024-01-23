@@ -1,0 +1,19 @@
+<div>
+
+<div>
+  <button mat-button (click)="accordion.openAll()">Expand All</button>
+  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+</div>
+
+<mat-accordion multi >
+
+      <tasks-task-card 
+        *ngFor="let task of tasks" 
+        [task]=task>
+      </tasks-task-card>
+  
+  
+
+</mat-accordion>
+
+</div>

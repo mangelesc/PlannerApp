@@ -14,7 +14,10 @@ html, body { height: 100%; }
 body { 
   margin: 0; 
   font-family: Roboto, "Helvetica Neue", sans-serif; 
-  color: var(--font-color);
+  color: var(--font-color) !important;
+  /* color: red !important; */
+
+
 }
 
 /* Shared */

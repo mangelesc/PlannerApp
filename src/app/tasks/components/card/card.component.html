@@ -15,7 +15,7 @@
 <div >
   <mat-expansion-panel class="mat-expansion-panel" >
 
-    <mat-expansion-panel-header class="mat-expansion-panel-header">
+    <mat-expansion-panel-header class="mat-expansion-panel-header" style="background-color: {{ categoriasColor[task.category || 'default'] }}">
         <!-- <mat-panel-description>
           <mat-icon>account_circle</mat-icon>
         </mat-panel-description> -->
@@ -32,7 +32,7 @@
 
             </div>
 
-            <mat-icon>   {{categoriasIconos[task.category || 'default'] }}</mat-icon>
+            <mat-icon> {{ categoriasIconos[task.category || 'default'] }}</mat-icon>
 
         </div>
         

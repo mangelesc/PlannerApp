@@ -1,8 +1,9 @@
 # Planner App 
 
 Aplicación desarrollada en Angular, generada con with [Angular CLI] version 16.2.7.. Material y PrimeFlex
+
 ## Backend
-Para el backend he usado JSON server para el modo desarrollo, usando un archivo .json como BBDD a nivel interno. 
+En el backend he usado JSON server para el modo desarrollo, usando un archivo .json como BBDD a nivel interno. 
 
 ## Ejecutar Modo Desarrollo
 

@@ -12,24 +12,46 @@
 
 <!-- </mat-card> --> 
 
-  <mat-expansion-panel >
-    <mat-expansion-panel-header>
-      
-        <div>
-          <mat-panel-title>
-          {{ task.title | uppercase}}
-          </mat-panel-title>
-          <mat-panel-description>
-          {{ task.category | titlecase }}
-          </mat-panel-description>
+<div >
+  <mat-expansion-panel class="mat-expansion-panel" >
+
+    <mat-expansion-panel-header class="mat-expansion-panel-header">
+        <!-- <mat-panel-description>
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description> -->
+        <div class="mat-expansion-panel-header-main-div">
+            <div>
+
+              <mat-panel-title>
+              {{ task.title | uppercase}}
+              </mat-panel-title>
+
+              <mat-panel-description >
+              {{ task.category | titlecase }}
+              </mat-panel-description>
+
+            </div>
+
+            <mat-icon>account_circle</mat-icon>
+
         </div>
         
-        <mat-icon>account_circle</mat-icon>
-      
+        <mat-divider></mat-divider>
     </mat-expansion-panel-header>
-    <p> {{ task.description }} </p>
+    
+    <div class="mat-expansion-panel-body">
 
-    <mat-slide-toggle>Slide me!</mat-slide-toggle>
+      <p> {{ task.description }} </p>
+
+      <p> {{ task.deadline | date }} </p>
+
+    </div>
+    
+
+    <mat-slide-toggle>Terminada!</mat-slide-toggle>
+
+    
 
   </mat-expansion-panel>
 
+</div>

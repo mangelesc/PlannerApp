@@ -1,12 +1,20 @@
-.example-action-buttons {
-  padding-bottom: 20px;
+.mat-expansion-panel{
+  margin: 1em 0em;
 }
 
-.example-headers-align .mat-expansion-panel-header-description {
-  justify-content: space-between;
+.mat-expansion-panel-header{
+  padding: 1.2em 1.4em;
+  background-color: var(--accent-lightest-color);
+}
+
+.mat-expansion-panel-header-main-div{
+  display: flex;
+  justify-content:space-between;
   align-items: center;
+  width: 99%;
+
 }
 
-.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
-  margin-left: 8px;
+.mat-expansion-panel-body{
+  padding: 1.5em 0em;
 }

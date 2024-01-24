@@ -17,4 +17,13 @@ export class CardComponent implements OnInit{
     if ( !this.task ) throw Error ('Task property is required')
   }
 
+
+  public categoriasIconos = {
+    'home': 'home',
+    'shopping': 'shopping bag',
+    'work': 'work',
+    'leisure': 'mood',
+    'others': 'public',
+    'default': 'public'
+  };
 }

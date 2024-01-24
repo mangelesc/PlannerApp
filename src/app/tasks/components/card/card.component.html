@@ -32,7 +32,7 @@
 
             </div>
 
-            <mat-icon>account_circle</mat-icon>
+            <mat-icon>   {{categoriasIconos[task.category || 'default'] }}</mat-icon>
 
         </div>
         
@@ -46,6 +46,17 @@
       <p> {{ task.deadline | date }} </p>
 
     </div>
+
+    <button mat-button
+      [routerLink]="['/planner/edit', task.id]">
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+
+    <button mat-button>
+      <mat-icon>delete</mat-icon>
+      Eliminar
+    </button>
     
 
     <mat-slide-toggle>Terminada!</mat-slide-toggle>

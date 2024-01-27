@@ -5,7 +5,7 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
-import { TaskPageComponent } from './pages/task-page/task-page.component';
+import { ListCategoryPageComponent } from './pages/list-category-page/list-category-page.component';
 
 const routes: Routes = [
   {
@@ -32,8 +32,8 @@ const routes: Routes = [
       },
       {
         // Cuidado donde colocamos :id, si lo ponemos al principio no entrará en los demás
-        path: ':id', 
-        component: TaskPageComponent
+        path: ':category', 
+        component: ListCategoryPageComponent
       },
       {
         path: '**', 

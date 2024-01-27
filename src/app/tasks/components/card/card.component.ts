@@ -20,9 +20,9 @@ export class CardComponent implements OnInit{
 
   public categoriasIconos = {
     'home': 'home',
-    'shopping': 'shopping bag',
+    'shopping': 'shopping_cart',
     'work': 'work',
-    'leisure': 'mood',
+    'leisure': 'person',
     'others': 'public',
     'default': 'public'
   };

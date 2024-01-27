@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-category-button',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./category-button.component.css']
 })
 export class CategoryButtonComponent {
+
+  @Input()
+  public title!:string;
+
+  ngOnInit(): void {
+    if ( !this.title ) throw Error ('Task property is required')
+  }
 
 }

@@ -31,6 +31,16 @@ export enum Category {
   Others = "others",
 }
 
+export interface CategoriasIconos {
+    [key: string]: string; // Firma de índice
+    home: string;
+    shopping: string;
+    work: string;
+    leisure: string;
+    others: string;
+    default: string;
+  };
+
 export interface User {
   id:    number;
   user:  string;

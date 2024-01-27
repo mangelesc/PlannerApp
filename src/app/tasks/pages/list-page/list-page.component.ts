@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from '../../interfaces/taks.interface';
+import { Category, Task, CategoriasIconos } from '../../interfaces/taks.interface';
 import { TasksService } from '../../services/tasks.service';
 
 @Component({
@@ -15,6 +15,17 @@ export class ListPageComponent implements OnInit {
 
   public tasks: Task[] = [];
 
+  public categories: string[] = Object.values(Category);
+
+  public categoriasIconos: CategoriasIconos = {
+    'home': 'home',
+    'shopping': 'shopping_cart',
+    'work': 'work',
+    'leisure': 'person',
+    'others': 'public',
+    'default': 'public'
+  };
+
   constructor( private tasksService: TasksService ) {};
 
   ngOnInit(): void {
@@ -22,6 +33,8 @@ export class ListPageComponent implements OnInit {
       // Para que se dispare me tengo que suscribir
       // las tasks que devuelve serán igual a las tasks del componente (this.tasks)
       .subscribe( tasks => this.tasks = tasks );
+
+      console.log(this.categories);
   }
 
 }

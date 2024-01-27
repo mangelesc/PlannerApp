@@ -1,6 +1,16 @@
 <h1 class="font-medium m-4 md:mx-8">Listado de tareas</h1>
 <mat-divider></mat-divider>
 
+<div class="flex justify-content-center flex-wrap">
+  <button 
+    *ngFor="let category of categories"
+    mat-stroked-button
+    [routerLink]="['/planner/list', category]">
+      <mat-icon>{{ categoriasIconos[category] }}</mat-icon>
+      {{ category | titlecase }}
+    </button>
+</div>
+
 <div class="grid m-3 md:mx-7">
 
   <tasks-acordion 

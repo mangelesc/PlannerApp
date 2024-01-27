@@ -32,7 +32,7 @@ const routes: Routes = [
       },
       {
         // Cuidado donde colocamos :id, si lo ponemos al principio no entrará en los demás
-        path: ':category', 
+        path: 'list/:category', 
         component: ListCategoryPageComponent
       },
       {

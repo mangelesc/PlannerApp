@@ -2,11 +2,12 @@
   "users": [
     {
       "id": 1,
-      "user": "Angela C",
-      "email": "angela.c@gmail.com"
+      "user": "AngelaC",
+      "password": "", 
+      "email": "angela.c@gmail.com",
+      "role": "admin"
     }
   ],
-
   "tasks": [
     {
       "id": "1",

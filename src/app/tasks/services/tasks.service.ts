@@ -24,5 +24,10 @@ export class TasksService {
         catchError ( error => of (undefined) )
       )
   }
+
+  getSuggestions( query: string ): Observable<Task[]> {
+    // Aunque no retorne nada, siempre retorna un []
+    return this.httpClient.get<Task[]>(`${this.baseUrl}/tasks/?q=${ query }&_limit=6`)
+  }
   
 }

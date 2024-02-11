@@ -15,6 +15,11 @@
 
 }
 
+.mat-expansion-panel-header-main-div-title{
+  display: flex;
+  
+}
+
 .mat-expansion-panel-body{
   padding: 1.5em 0em;
 }

@@ -3,6 +3,7 @@
 
 <div class="flex justify-content-center flex-wrap">
   <button 
+  class="p-2 m-2"
     *ngFor="let category of categories"
     mat-stroked-button
     [routerLink]="['/planner/list', category]">

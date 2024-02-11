@@ -1,1 +1,25 @@
-<p>search-page works!</p>
+<h1 class="font-medium m-4 md:mx-8">Buscar tareas</h1>
+
+<mat-divider></mat-divider>
+
+<div class="grid m-3 md:mx-7">
+
+    <mat-form-field class="col-12">
+
+      <mat-label>Buscar</mat-label>
+      <input 
+        type="text"
+        matInput
+        [formControl]="searchInput"
+        (input)="searchTask()"
+      />
+
+
+    </mat-form-field>
+
+  <tasks-acordion 
+    [tasks]=tasks
+    class="col-12">
+  </tasks-acordion>
+
+</div>

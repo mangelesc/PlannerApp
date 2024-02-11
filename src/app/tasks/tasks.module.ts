@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from '../material/material.module';
 import { TasksRoutingModule } from './tasks-routing.module';
@@ -14,6 +15,7 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { TaskPageComponent } from './pages/task-page/task-page.component';
 import { CategoryButtonComponent } from './components/category-button/category-button.component';
 import { CategoriesListButtonsComponent } from './components/categories-list-buttons/categories-list-buttons.component';
+
 
 
 
@@ -32,8 +34,11 @@ import { CategoriesListButtonsComponent } from './components/categories-list-but
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    
     TasksRoutingModule,
-    MaterialModule
+    MaterialModule,
+    
   ]
 })
 export class TasksModule { }

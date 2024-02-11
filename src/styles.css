@@ -3,8 +3,7 @@
 :root {
   /* --primary-bg-color: #70A8B2;
    */
-   
-   --primary-bg-color: #AA8EAB;
+  --primary-bg-color: #AA8EAB;
   --primary-light-bg-color: #b5dbe1;
   --secondary-bg-color: #E2FADB;
   --accent-color: #c37d92;
@@ -19,8 +18,6 @@ body {
   margin: 0; 
   font-family: Roboto, "Helvetica Neue", sans-serif; 
   color: var(--font-color) !important;
-  /* color: red !important; */
-
 
 }
 

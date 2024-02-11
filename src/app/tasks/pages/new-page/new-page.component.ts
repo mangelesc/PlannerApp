@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class NewPageComponent {
 
+  public categories = [
+    {id : 'home', desc: 'home'},
+    {id : 'shopping', desc: 'shopping_cart'},
+    {id : 'work', desc: 'work'},
+    {id : 'leisure', desc: 'person'},
+    {id : 'others', desc: 'public'}
+  ];
 }

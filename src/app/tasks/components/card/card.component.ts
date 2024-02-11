@@ -18,6 +18,14 @@ export class CardComponent implements OnInit{
   }
 
 
+  // public categories = [
+  //   {id : 'home', desc: 'home'},
+  //   {id : 'shopping', desc: 'shopping_cart'},
+  //   {id : 'work', desc: 'work'},
+  //   {id : 'leisure', desc: 'person'},
+  //   {id : 'others', desc: 'public'}
+  // ];
+
   public categoriasIconos = {
     'home': 'home',
     'shopping': 'shopping_cart',

@@ -1,1 +1,73 @@
-<p>new-page works!</p>
+<h1 class="font-medium m-4 md:mx-8">Añadir tarea</h1>
+
+<mat-divider></mat-divider>
+
+
+<mat-divider class="mb-2"></mat-divider>
+
+<div class="grid">
+
+  <div class="col-12 md:col 10 ">
+    <mat-card>
+      <mat-card-content>
+
+        <div class="grid">
+
+          <mat-form-field class="col-12">
+            <mat-label>Título</mat-label>
+            <input
+              matInput
+              type="text"
+              required
+            />
+          </mat-form-field>
+
+          <mat-form-field class="col-12">
+            <mat-label>Descripción</mat-label>
+            <textarea 
+              matInput
+              required
+            >
+            </textarea>
+          </mat-form-field>
+
+          <mat-form-field class="col-6">
+            <mat-label>Categoría</mat-label>
+            <mat-select required="">
+              <mat-option *ngFor="let category of categories"
+                [value]="category.id">
+                {{ category.desc }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="col-6">
+            <mat-label>Fecha límite</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="flex justify-content-between">
+          <button
+            mat-flat-button
+            color="warn"
+          >
+            Borrar
+          </button>
+
+          <button
+            mat-flat-button
+            color="primary"
+          >
+            <mat-icon>save</mat-icon>
+            Guardar
+          </button>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+</div>

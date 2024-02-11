@@ -27,7 +27,7 @@ export class TasksService {
 
   getSuggestions( query: string ): Observable<Task[]> {
     // Aunque no retorne nada, siempre retorna un []
-    return this.httpClient.get<Task[]>(`${this.baseUrl}/tasks/?q=${ query }&_limit=6`)
+    return this.httpClient.get<Task[]>(`${this.baseUrl}/tasks/?q=${ query }&_limit=10`)
   }
   
 }

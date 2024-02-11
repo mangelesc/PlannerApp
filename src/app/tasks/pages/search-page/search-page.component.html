@@ -12,10 +12,24 @@
         matInput
         [formControl]="searchInput"
         (input)="searchTask()"
+        [matAutocomplete]="auto"
       />
-
-
     </mat-form-field>
+
+    <mat-autocomplete autoActiveFirstOption
+      #auto="matAutocomplete"
+      (optionSelected)="onSelectedOption( $event )"
+      >
+      <mat-option *ngFor="let task of tasks" [value]="task">
+        {{ task.title }}
+      </mat-option>
+
+      <mat-option
+        *ngIf="tasks.length === 0 && searchInput.value && searchInput.value.length > 0"
+        value="">
+        No se encontró nada con el término {{ searchInput.value }}
+      </mat-option>
+    </mat-autocomplete>
 
   <tasks-acordion 
     [tasks]=tasks

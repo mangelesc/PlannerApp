@@ -46,7 +46,7 @@ export class TasksService {
 
   updateTask ( task: Task ):Observable<Task>{
     if ( !task.id ) throw Error('Task id is required');
-    return this.httpClient.post<Task>(`${this.baseUrl}/tasks/${ task.id }`, task );
+    return this.httpClient.patch<Task>(`${this.baseUrl}/tasks/${ task.id }`, task );
   }
 
   deleteTaskByID ( id: string ):Observable<boolean>{

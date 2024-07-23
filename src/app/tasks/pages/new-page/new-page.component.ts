@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Category, Task } from '../../interfaces/taks.interface';
 import { TasksService } from '../../services/tasks.service';
 import { switchMap } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -38,7 +39,8 @@ export class NewPageComponent implements OnInit {
   constructor ( 
     private tasksService: TasksService, 
     private activatedRoute: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private snackbar: MatSnackBar
   ) {}
 
   // Convertimos task en Task
@@ -56,7 +58,7 @@ export class NewPageComponent implements OnInit {
           
         ).subscribe ( task => {
           if (!task) return this.router.navigateByUrl('/');
-                  
+
           this.taskForm.reset( task );
           return;
         }  
@@ -64,12 +66,21 @@ export class NewPageComponent implements OnInit {
   }
 
   onSubmit(): void{
-    // if ( this.taskForm.invalid ) return;
 
+    if ( this.taskForm.invalid ) return;
 
+    //Edito si tiene ID 
+    if ( this.currentTask.id ){
+      this.tasksService.updateTask ( this.currentTask )
+      .subscribe ( task => {
+        this.showSnackbar (`${ task.title } updated!`);
+      });
 
+      return;
+    }
+
+    // Si tiene tittle añado el id y otros campos
     if ( this.currentTask.title ){
-
       
       this.taskForm.patchValue({
         // Asignamos id de la fecha actual, para evitar duplicados
@@ -79,18 +90,16 @@ export class NewPageComponent implements OnInit {
         creation_date: new Date().toString() // Fecha actual
       });
 
-
       // Así dará error de typescript, por solucionarle creamos un getter (get currentTaks) 
       // this.TasksService.updateTask( this.taskForm.value )
 
       this.tasksService.addTask( this.currentTask )
         .subscribe (task => {
-          // snackbar
+          this.showSnackbar (`${ task.title } created!`);
         })
       
     }
     
-
     
     console.log(
       {
@@ -98,5 +107,14 @@ export class NewPageComponent implements OnInit {
         value: this.taskForm.value
       }
     )
+  }
+
+
+
+  showSnackbar( message: string ): void {
+    this.snackbar.open (message, 'Cerrar', {
+      duration: 2500,
+    })
+
   }
 }

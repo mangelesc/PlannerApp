@@ -12,7 +12,7 @@
     {
       "id": "1",
       "title": "Limpiar la sala de estar",
-      "description": "Dedica 30 minutos para limpiar y organizar la sala de estar en casa.",
+      "description": "Dedica 40 minutos para limpiar y organizar la sala de estar en casa.",
       "user_owner": "1",
       "category": "home",
       "importance": "medium",
@@ -278,6 +278,46 @@
       "done": false,
       "creation_date": "Tue Jul 23 2024 20:11:08 GMT+0200 (hora de verano de Europa central)",
       "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-23T18:21:33.069",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "leisure",
+      "done": false,
+      "creation_date": "Tue Jul 23 2024 20:21:33 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-23T18:22:05.348",
+      "title": "bba",
+      "description": "aa",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Tue Jul 23 2024 20:22:05 GMT+0200 (hora de verano de Europa central)",
+      "deadline": ""
+    },
+    {
+      "id": "2024-07-23T18:22:17.336",
+      "title": "aa",
+      "description": "bb",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Tue Jul 23 2024 20:22:17 GMT+0200 (hora de verano de Europa central)",
+      "deadline": ""
+    },
+    {
+      "id": "2024-07-23T18:26:34.960",
+      "title": "dddd",
+      "description": "ddd",
+      "user_owner": "1",
+      "category": "others",
+      "done": false,
+      "creation_date": "Tue Jul 23 2024 20:26:34 GMT+0200 (hora de verano de Europa central)",
+      "deadline": ""
     }
   ]
 }

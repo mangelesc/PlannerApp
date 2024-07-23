@@ -11,7 +11,6 @@ export interface Task {
   description:   string;
   user_owner:    string;
   category:      Category;
-  importance:    Importance;
   done:          boolean;
   creation_date: string;
   deadline:      null | string;

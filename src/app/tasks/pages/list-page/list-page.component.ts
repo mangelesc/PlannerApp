@@ -33,8 +33,6 @@ export class ListPageComponent implements OnInit {
       // Para que se dispare me tengo que suscribir
       // las tasks que devuelve serán igual a las tasks del componente (this.tasks)
       .subscribe( tasks => this.tasks = tasks );
-
-      console.log(this.categories);
   }
 
 }

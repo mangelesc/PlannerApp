@@ -3,7 +3,7 @@
     {
       "id": 1,
       "user": "AngelaC",
-      "password": "", 
+      "password": "",
       "email": "angela.c@gmail.com",
       "role": "admin"
     }
@@ -118,6 +118,166 @@
       "done": false,
       "creation_date": "2024-01-30T16:45:00.000Z",
       "deadline": "2024-02-16T09:30:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:23:57.401",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:23:57 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:23:59.155",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:23:59 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:23:59.587",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:23:59 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:23:59.731",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:23:59 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:23:59.861",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:23:59 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:23:59.989",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:23:59 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:00.117",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:00 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:01.936",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:01 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:02.144",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:02 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:02.303",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:02 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:02.495",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:02 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:02.903",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:02 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:03.081",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:03 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-21T19:24:03.226",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "work",
+      "done": false,
+      "creation_date": "Sun Jul 21 2024 21:24:03 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-23T18:11:04.904",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "leisure",
+      "done": false,
+      "creation_date": "Tue Jul 23 2024 20:11:04 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
+    },
+    {
+      "id": "2024-07-23T18:11:08.491",
+      "title": "Querer más a cosita",
+      "description": "Quiero más a cosita, porque me quiere quitar el aire fresquito :(\nY me quiere obligar a limpiar",
+      "user_owner": "1",
+      "category": "leisure",
+      "done": false,
+      "creation_date": "Tue Jul 23 2024 20:11:08 GMT+0200 (hora de verano de Europa central)",
+      "deadline": "2024-07-21T22:00:00.000Z"
     }
   ]
 }

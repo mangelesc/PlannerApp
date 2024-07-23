@@ -11,7 +11,7 @@
     <mat-card>
       <mat-card-content>
 
-        <div class="grid">
+        <form class="grid" [formGroup]="taskForm" (ngSubmit)="onSubmit()">
 
           <mat-form-field class="col-12">
             <mat-label>Título</mat-label>
@@ -19,6 +19,8 @@
               matInput
               type="text"
               required
+              formControlName="id"
+              formControlName="title"
             />
           </mat-form-field>
 
@@ -27,13 +29,16 @@
             <textarea 
               matInput
               required
-            >
-            </textarea>
+              formControlName="description"
+              ></textarea>
           </mat-form-field>
 
           <mat-form-field class="col-6">
             <mat-label>Categoría</mat-label>
-            <mat-select required="">
+            <mat-select 
+              required
+              formControlName="category"
+              >
               <mat-option *ngFor="let category of categories"
                 [value]="category.id">
                 {{ category.desc }}
@@ -43,11 +48,13 @@
 
           <mat-form-field class="col-6">
             <mat-label>Fecha límite</mat-label>
-            <input matInput [matDatepicker]="picker">
+            <input matInput [matDatepicker]="picker" formControlName="deadline">
             <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
-        </div>
+
+
+        </form>
 
         <div class="flex justify-content-between">
           <button
@@ -60,6 +67,7 @@
           <button
             mat-flat-button
             color="primary"
+            (click)="onSubmit()"
           >
             <mat-icon>save</mat-icon>
             Guardar

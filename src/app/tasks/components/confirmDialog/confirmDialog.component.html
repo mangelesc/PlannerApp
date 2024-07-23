@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Tarea</h1>
+<div mat-dialog-content>
+  <p>¿Quieres eliminar esta tarea?</p>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="warn" (click)="onNoClick()">Cancelar</button>
+  <span class="spacer"></span>
+  <button 
+    mat-flat-button 
+    color="primary" 
+    (click)="onConfirm()" 
+    cdkFocusInitial>
+    Ok
+  </button>
+</div>

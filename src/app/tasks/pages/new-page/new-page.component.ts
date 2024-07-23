@@ -2,10 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
+
 import { Category, Task } from '../../interfaces/taks.interface';
 import { TasksService } from '../../services/tasks.service';
-import { switchMap } from 'rxjs';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { filter, switchMap } from 'rxjs';
+import { ConfirmDialogComponent } from '../../components/confirmDialog/confirmDialog.component';
+
 
 
 @Component({
@@ -40,7 +44,8 @@ export class NewPageComponent implements OnInit {
     private tasksService: TasksService, 
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private snackbar: MatSnackBar
+    private snackbar: MatSnackBar,
+    private dialog: MatDialog
   ) {}
 
   // Convertimos task en Task
@@ -109,6 +114,24 @@ export class NewPageComponent implements OnInit {
     )
   }
 
+  onDeleteTaks () {
+    if ( !this.currentTask.id ) throw Error ('Task id is required');
+
+    const dialogRef = this.dialog.open( ConfirmDialogComponent, {
+      data: this.taskForm.value,
+    });
+
+    dialogRef.afterClosed()
+      .pipe(
+        filter ( (result: boolean) => result ),
+        switchMap( () => this.tasksService.deleteTaskByID( this.currentTask.id )),
+        filter ( (wasDeleted: boolean) => wasDeleted ),
+      )
+      .subscribe(() => {
+        this.router.navigate(['/planner/list']);
+      });
+
+  }
 
 
   showSnackbar( message: string ): void {

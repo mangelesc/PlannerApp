@@ -50,4 +50,5 @@ export class CardComponent implements OnInit{
     'others': '#9EB0AE',
     'default': '#9EB0AE'
   };
+
 }

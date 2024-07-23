@@ -1,4 +1,8 @@
-<h1 class="font-medium m-4 md:mx-8">Añadir tarea</h1>
+<h1 class="font-medium m-4 md:mx-8">
+  {{ currentTask.id ? 'Editar tarea' : 'Añadir tarea' }}
+  <br>
+  <small *ngIf="currentTask.id"> {{ currentTask.title }} </small>
+</h1>
 
 <mat-divider></mat-divider>
 
@@ -58,11 +62,14 @@
 
         <div class="flex justify-content-between">
           <button
+            *ngIf="currentTask.id"
+            (click)="onDeleteTaks()"
             mat-flat-button
             color="warn"
           >
             Borrar
           </button>
+          <span></span>
 
           <button
             mat-flat-button
